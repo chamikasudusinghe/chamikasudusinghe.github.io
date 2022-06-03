@@ -3004,7 +3004,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				background-color: #333856;
+				background-color: #444b71;
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3017,11 +3017,11 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .image {
-				width: 40%;
+				width: 200px;
 			}
 
 			.spotlights > section > .content {
-				width: 60%;
+				width: 80%;
 			}
 
 		}
@@ -3029,11 +3029,12 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.spotlights > section > .image {
-				width: 45%;
+				width: 200px;
+				margin: auto;
 			}
 
 			.spotlights > section > .content {
-				width: 55%;
+				width: 80%;
 			}
 
 		}
@@ -3509,6 +3510,10 @@ input, select, textarea {
 
 		#banner.style2:after {
 			background-color: #8d82c4;
+		}
+
+		#banner.career:after {
+			background-color: #c58919cb;
 		}
 
 		#banner.style3:after {
