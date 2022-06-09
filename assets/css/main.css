@@ -3520,6 +3520,22 @@ input, select, textarea {
 			background-color: #5c2964;
 		}
 
+		#banner.volunteering:after {
+			background-color: #00629B;
+		}
+
+		#banner.travel:after {
+			background-color: #994c28;
+		}
+
+		#banner.education:after {
+			background-color: #168088;
+		}
+
+		#banner.awards:after {
+			background-color: #284c81;
+		}
+
 		#banner.style3:after {
 			background-color: #ec8d81;
 		}
