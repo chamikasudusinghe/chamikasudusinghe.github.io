@@ -3628,6 +3628,15 @@ input, select, textarea {
 						margin-bottom: 2em;
 					}
 
+				#banner > .inner .bio {
+					display: block;
+				}
+
+					#banner > .inner .bio > * {
+						margin-right: 0;
+						margin-bottom: 2em;
+					}
+
 				#banner.major {
 					height: auto;
 					min-height: 0;
@@ -3643,6 +3652,10 @@ input, select, textarea {
 			}
 
 				#banner > .inner .content p br {
+					display: none;
+				}
+
+				#banner > .inner .bio p br {
 					display: none;
 				}
 
