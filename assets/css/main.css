@@ -3493,6 +3493,34 @@ input, select, textarea {
 					text-transform: uppercase;
 					align-items: justify;
 				}
+			
+			#banner > .inner .bio {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+				margin: 0 0 2em 0;
+			}
+
+				#banner > .inner .bio > * {
+					margin-right: 1.5em;
+					margin-bottom: 0;
+				}
+
+				#banner > .inner .bio > :last-child {
+					margin-right: 0;
+				}
+
+				#banner > .inner .bio p {
+					font-size: 0.8em;
+					font-weight: 500;
+					letter-spacing: 0.25em;
+					align-items: justify;
+				}
 
 		#banner.major {
 			height: 75vh;
@@ -3525,7 +3553,7 @@ input, select, textarea {
 		}
 
 		#banner.travel:after {
-			background-color: #994c28;
+			background-color: #284c81;
 		}
 
 		#banner.education:after {
@@ -3533,7 +3561,7 @@ input, select, textarea {
 		}
 
 		#banner.awards:after {
-			background-color: #284c81;
+			background-color: #994c28;
 		}
 
 		#banner.style3:after {
