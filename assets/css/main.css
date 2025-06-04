@@ -3405,13 +3405,35 @@ input, select, textarea {
 		top: -3.25em;
 	}
 
-	#img{
-		width:25%;
-		max-width:25%;
-		border-radius:20%;
+	#img {
+		width: clamp(260px, 22vw, 320px);
+		height: auto;
+		border-radius: 32px;
 		border: 1px solid #ddd;
 		padding: 5px;
-	  }
+		flex-shrink: 0;
+	}
+
+	.bio-text {
+		flex-grow: 1;
+		min-width: 0;
+	}
+
+	.bio-text h1 {
+		font-size: 2.2rem;
+		margin-bottom: 0.5rem;
+		text-align: left;
+		white-space: nowrap;
+	}
+
+	.bio-text p {
+		text-align: justify;
+		line-height: 1.6;
+	}
+
+	.bio-text .actions {
+		margin-top: 1rem;
+	}
 
 		#banner:after {
 			-moz-transition: opacity 2.5s ease;
@@ -3495,15 +3517,15 @@ input, select, textarea {
 				}
 			
 			#banner > .inner .bio {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
 				display: flex;
-				-moz-align-items: center;
-				-webkit-align-items: center;
-				-ms-align-items: center;
-				align-items: center;
-				margin: 0 0 2em 0;
+				flex-direction: row;
+				align-items: flex-start;
+				justify-content: center;
+				gap: 2rem;
+				flex-wrap: nowrap;
+				width: 100%;
+				max-width: 1000px;
+				margin: 2rem auto 0 auto;
 			}
 
 				#banner > .inner .bio > * {
@@ -3604,6 +3626,24 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 768px) {
+			#banner > .inner .bio {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+
+			.bio-text h1 {
+				font-size: 1.8rem;
+				text-align: center;
+				white-space: normal;
+			}
+
+			.bio-text p {
+				text-align: justify;
+			}
+		}
+
 		@media screen and (max-width: 736px) {
 
 			#banner {
@@ -3646,6 +3686,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
+
+			.bio-text h1 {
+				font-size: 1.6rem;
+			}
 
 			#banner {
 				padding: 6em 0 2em 0 ;
