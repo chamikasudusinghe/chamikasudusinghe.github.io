@@ -1,0 +1,55 @@
+.pub-list {
+  margin: 0;
+  padding: 0;
+}
+
+.pub-list li {
+  padding: 1em;
+  list-style: none;
+}
+
+.pub-list li:nth-child(2n) {
+  background-color: #444;
+}
+
+.pub-list li:nth-child(2n+1) {
+  background-color: #333;
+}
+
+.pub-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.pub-authors {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.pub-venue {
+  display: block;
+  font-style: italic;
+}
+
+.pub-note {
+  display: block;
+  color: rgb(186, 166, 239);
+}
+
+.pub-button-wrap {
+  font-size: 14px;
+  width: 4.5em;
+  height: 1.6em;
+  color: rgb(213, 198, 155);
+  border: 0.08em solid;
+  margin-top: 0.8em;
+  cursor: pointer;
+  background-color: #333;
+  transition: 0.3s;
+}
+
+.pub-button-wrap:hover {
+  background-color: rgb(117, 103, 152);
+  color: white;
+}
