@@ -450,10 +450,6 @@ code {
   transition: background-color 0.3s ease;
 }
 
-.card-joined:hover {
-  background-color: #444;
-}
-
 .card-thesis a {
   color: #d5c69b;
   text-decoration: none;
