@@ -311,6 +311,11 @@ code {
   border-radius: 20px;
 }
 
+.student-grid {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
 .navbar {
   border-bottom: 2px solid rgb(186, 166, 239);
   background-color: #111 !important;
@@ -379,6 +384,9 @@ code {
 }
 
 #person-card {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
   background: linear-gradient(145deg, #1e1e1e, #151515);
   border: 1px solid #3a3a3a;
   border-radius: 18px;
@@ -387,6 +395,7 @@ code {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
 }
 
+
 #person-card:hover {
   transform: translateY(-6px) scale(1.015);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.65);
@@ -394,8 +403,8 @@ code {
 }
 
 #person-card .card-img-top {
-  height: 320px;
   width: 100%;
+  height: 320px;
   object-fit: cover;
   object-position: top center;
   border-bottom: 1px solid #444;
@@ -430,6 +439,63 @@ code {
   margin-bottom: 0.4rem;
   font-size: 1.05rem;
   line-height: 1.4;
+}
+
+.student-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.pi-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#person-card-pi {
+  background: linear-gradient(145deg, #1e1e1e, #151515);
+  border: 1px solid #3a3a3a;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  width: 360px;    
+  margin: 0 auto;
+}
+
+#person-card-pi:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.65);
+  border-color: #555;
+}
+
+#person-card-pi .card-img-top {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-bottom: 1px solid #444;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+#person-card-pi:hover .card-img-top {
+  transform: scale(1.02);
+}
+
+#person-card-pi .card-body {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #e0e0e0;
+}
+
+#person-card-pi .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fdfdfd;
+  margin-bottom: 0.5rem;
 }
 
 .card-label {
@@ -509,5 +575,31 @@ code {
 
   h1, h5, .card-label {
     text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .student-grid {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #person-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #person-card .card-img-top {
+    height: auto;
+  }
+
+  #person-card-pi {
+    width: 100%;
+    max-width: 100%;         
+  }
+
+  #person-card-pi .card-img-top {
+    height: auto;    
   }
 }
