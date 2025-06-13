@@ -1,6 +1,3 @@
 [submodule "research"]
 	path = research
 	url = https://github.com/chamikasudusinghe/research.git
-[submodule "adapt"]
-	path = adapt
-	url = https://github.com/ADAPT-uiuc/ADAPT-website.git
